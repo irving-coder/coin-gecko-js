@@ -2,5 +2,42 @@
     margin: 0;
     padding: 0;
     font-family: Verdana, sans-serif;
+    text-align: start;
+    color: white;
 }
 
+body{
+    background-color: rgba(0,0,0, 0.9);
+}
+
+header{
+    margin: 20px 12%;
+}
+
+#main-table{
+    margin: 0 12%;
+    background-color: rgba(255,255,255, 0.15);
+
+    border: 1px solid black;
+}
+
+#main-table #id-number{
+    width: 60px;
+    /* border: 1px solid red; */
+}
+
+#main-table #coin{
+    width: 450px;
+}
+
+#main-table #price{
+    width: 200px;
+}
+
+#main-table #price-ch{
+    width: 220px;
+}
+
+#main-table #h24{
+    width: 220px;
+}
