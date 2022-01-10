@@ -10,11 +10,11 @@
         .then(data => {
             data.map((elem, index) => {
                 var tr = document.createElement('tr');
-                var td = document.createElement('td');
+                var td = '';
 
-                td.innerHTML = elem.id;
-                tr.append(td);
+                td = '<td>' +(index +  1)+ '</td><td>' +elem.id+ '</td> <td>' +elem.current_price.toLocaleString()+ '</td> <td>' +elem.price_change_percentage_24h+ '</td> <td>' +elem.total_volume.toLocaleString()+ '</td>';
 
+                tr.innerHTML = td;
                 mainTable.appendChild(tr);
             });
         })
